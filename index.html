@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cricket Player Profiles</title>
+  <meta name="repo" content="get2abhijit/cricket-player-profile-data" />
+  <meta name="contact" content="https://github.com/get2abhijit" />
+  <meta name="robots" content="noindex" />
+  <meta name="app-version" content="2.4.0" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2714%27 fill=%27%23eb6834%27/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+<div class="viz-root">
+  <header class="masthead">
+    <svg class="seam" viewBox="0 0 400 400" aria-hidden="true"><circle cx="200" cy="200" r="190" fill="none" stroke="currentColor" stroke-width="2"/><path d="M70 60c90 70 90 210 0 280M330 60c-90 70-90 210 0 280" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="6 9"/></svg>
+    <div class="brand">
+      <div class="logo" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="40" height="40"><circle cx="16" cy="16" r="14" fill="#eb6834"/><path d="M8 9.5c5 4 5 9 0 13M24 9.5c-5 4-5 9 0 13" stroke="#fff" stroke-width="1.4" fill="none" stroke-dasharray="1.6 1.8"/></svg>
+      </div>
+      <div>
+        <p class="eyebrow">Men's T20 International player intelligence</p>
+        <h1>Cricket Player Profiles <span class="badge" id="version">v2.4.0</span></h1>
+        <p class="byline">by <strong>Abhijit Deshpande</strong> · <span id="generated">loading…</span></p>
+      </div>
+    </div>
+    <nav class="tabs" role="tablist" hidden>
+      <button role="tab" aria-selected="true" data-tab="overview">Overview</button>
+      <button role="tab" aria-selected="false" data-tab="players">Players</button>
+      <button role="tab" aria-selected="false" data-tab="fix">Fix data <span id="fix-count" class="pill"></span></button>
+      <button role="tab" aria-selected="false" data-tab="data">Use the data</button>
+      <button id="lock-btn" class="lock-btn" title="Sign out and forget the key on this device">Sign out</button>
+    </nav>
+  </header>
+
+  <div class="erabar" id="erabar" hidden>
+    <div class="erabar-inner">
+      <div class="seg" role="radiogroup" aria-label="Which players to include">
+        <button role="radio" data-era="all" aria-checked="true">All<span class="lg"> players</span></button>
+        <button role="radio" data-era="active" aria-checked="false">Active<span class="lg"> since cut-off</span></button>
+        <button role="radio" data-era="before" aria-checked="false"><span class="lg">Last played before cut-off</span><span class="sm">Earlier</span></button>
+      </div>
+      <label class="cut">Cut-off
+        <input type="date" id="era-cut" value="2021-01-01" min="2005-01-01" />
+      </label>
+      <button class="btn small ghost-dark" id="era-reset" hidden>Reset to 1 Jan 2021</button>
+      <p class="era-note" id="era-note"></p>
+    </div>
+  </div>
+
+  <main>
+    <div id="loading" class="loading">Loading…</div>
+
+    <!-- SIGN-IN BAND (public visitors) -->
+    <section id="lock" class="card signin" hidden>
+      <div class="signin-text">
+        <h2>🔒 Public overview</h2>
+        <p class="muted" id="lock-summary">Player-level data is private. Sign in to browse the profiles.</p>
+        <p class="muted">No account? Contact <a id="lock-contact" href="#" target="_blank" rel="noopener">Abhijit Deshpande</a> to request access.</p>
+      </div>
+      <form id="lock-form" autocomplete="off">
+        <label>Username <input id="lock-user" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" /></label>
+        <label>Key <input id="lock-key" type="password" autocomplete="current-password" /></label>
+        <button class="btn primary" type="submit" id="lock-go">Sign in</button>
+        <label class="check"><input type="checkbox" id="lock-remember" checked /> Remember on this device</label>
+        <p class="lock-error" id="lock-error" role="alert"></p>
+      </form>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section id="tab-overview" class="tab" hidden>
+      <div class="tiles" id="tiles"></div>
+      <figure class="card">
+        <figcaption class="card-head">
+          <div><h2>Players by year of their latest T20I</h2><p class="muted" id="year-hint">Bars left of the line are players whose last T20I was before the cut-off</p></div>
+        </figcaption>
+        <div class="legend"><span><i style="background:var(--active)"></i>Active since cut-off</span><span><i style="background:var(--earlier)"></i>Last played before cut-off</span></div>
+        <div id="year-chart" class="year-chart"></div>
+        <details class="table-view"><summary>Show as table</summary><div id="year-table"></div></details>
+      </figure>
+      <div class="grid2">
+        <figure class="card">
+          <figcaption class="card-head">
+            <div><h2>Completeness by team</h2><p class="muted" id="team-hint">Share of players with complete profiles</p></div>
+            <div class="controls">
+              <input id="team-search" type="search" placeholder="Filter teams…" aria-label="Filter teams" />
+              <select id="team-sort" aria-label="Sort teams">
+                <option value="players">Most players</option>
+                <option value="gaps">Most gaps</option>
+                <option value="pct">Lowest completeness</option>
+                <option value="name">A–Z</option>
+              </select>
+            </div>
+          </figcaption>
+          <div class="legend" id="status-legend"></div>
+          <div id="team-chart" class="team-chart"></div>
+        </figure>
+        <figure class="card">
+          <figcaption class="card-head"><div><h2>Bowling styles</h2><p class="muted">Players per style code</p></div></figcaption>
+          <div class="legend"><span><i style="background:var(--pace)"></i>Pace</span><span><i style="background:var(--spin)"></i>Spin</span></div>
+          <div id="code-chart"></div>
+          <details class="table-view"><summary>Show as table</summary><div id="code-table"></div></details>
+        </figure>
+      </div>
+    </section>
+
+    <!-- PLAYERS -->
+    <section id="tab-players" class="tab" hidden>
+      <div class="card">
+        <div class="filters">
+          <label>Search <input id="f-q" type="search" placeholder="Name, Cricsheet or Cricinfo ID" /></label>
+          <label>Team <select id="f-team"><option value="">All teams</option></select></label>
+          <label>Completeness <select id="f-status"><option value="">Any</option><option value="complete">Complete</option><option value="partial">Partial</option><option value="missing">Missing</option></select></label>
+          <label>Bowling <select id="f-bowl"><option value="">Any</option></select></label>
+          <label>Curation <select id="f-cur"><option value="">Any</option><option value="user">Corrected by you</option><option value="verified">Verified</option><option value="pending">Pending check</option><option value="conflict">Source conflict</option></select></label>
+          <button id="f-csv" class="btn">Download CSV</button>
+        </div>
+        <div class="result-line"><p class="muted" id="result-count"></p><div class="chips" id="chips"></div></div>
+        <div class="table-wrap">
+          <table class="grid" id="players-table">
+            <thead><tr>
+              <th data-sort="name">Player</th><th data-sort="teams">Team</th><th data-sort="bat">Bat</th>
+              <th data-sort="bowl">Bowling</th><th data-sort="role">Role</th><th data-sort="t20i" class="num">T20Is</th><th data-sort="last">Last T20I</th>
+              <th data-sort="status">Completeness</th><th>Curation</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="pager"><button class="btn" id="prev">‹ Prev</button><span id="page"></span><button class="btn" id="next">Next ›</button></div>
+      </div>
+    </section>
+
+    <!-- FIX DATA -->
+    <section id="tab-fix" class="tab" hidden>
+      <div class="card howto">
+        <h2>Fix player data in three steps</h2>
+        <ol>
+          <li><strong>Edit</strong> any row below (or use <em>Edit</em> in a player's panel). Every change lands in your batch at the bottom of the screen.</li>
+          <li><strong>Submit</strong> the batch: GitHub opens with everything pre-filled. Just press <em>Create</em>.</li>
+          <li><strong>Done.</strong> The changes are applied, locked against future runs, and the dashboard refreshes in a few minutes.</li>
+        </ol>
+      </div>
+      <div class="card">
+        <div class="filters">
+          <label>Show <select id="x-mode">
+            <option value="missing">Players missing data</option>
+            <option value="pending">Pending check (confirm or correct)</option>
+            <option value="conflict">Source disagrees with a correction</option>
+          </select></label>
+          <label>Team <select id="x-team"><option value="">All teams</option></select></label>
+          <p class="muted hint">Uses the player selection above (all players, or either side of the cut-off).</p>
+        </div>
+        <p class="muted" id="x-count"></p>
+        <div class="table-wrap">
+          <table class="grid edit" id="fix-table">
+            <thead><tr><th>Player</th><th>Team</th><th class="num">T20Is</th><th>Last T20I</th><th>Batting</th><th>Bowling</th><th>Role</th><th>WK</th><th>Links</th><th></th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="pager"><button class="btn" id="x-prev">‹ Prev</button><span id="x-page"></span><button class="btn" id="x-next">Next ›</button></div>
+      </div>
+    </section>
+
+    <!-- USE THE DATA -->
+    <section id="tab-data" class="tab" hidden>
+      <div class="card prose">
+        <h2>Use the profiles in your own analysis</h2>
+        <p>The dataset is published <strong>encrypted</strong>. Only someone with the access key can read it; refreshed automatically every week.</p>
+        <p><button class="btn primary" id="dl-json">Download players.json</button> <button class="btn" id="dl-csv">Download players.csv</button>
+          <span class="muted">all players, complete dataset</span></p>
+        <p>Every player is keyed by the <strong>Cricsheet ID</strong>, the same ID used in Cricsheet ball-by-ball files (<code>info.registry.people</code>), so it joins without name matching.</p>
+
+        <h3>Load it directly in your application (always the latest version)</h3>
+        <p class="muted">Copy <code>client/cpp_client.py</code> from the repository into your project · <code>pip install requests cryptography</code> · set <code>CPP_USER</code> and <code>CPP_KEY</code> in the environment (never in code).</p>
+<pre><code>import pandas as pd
+from cpp_client import load_players
+
+players = pd.json_normalize(list(load_players(url="<span class="base"></span>data/").values()))
+# e.g. bowling style of each bowler in your deliveries table
+deliveries = deliveries.merge(players[["id", "bowling.code", "bowling.kind"]],
+                              left_on="bowler_id", right_on="id", how="left")</code></pre>
+
+        <h3>Excel, Power BI, R, SQL</h3>
+        <p>Use <em>Download players.csv</em> above and open the file, or run <code>python tools/decrypt_export.py --csv</code> from the repository.</p>
+
+        <h3>Key fields</h3>
+        <dl class="guide">
+          <dt>batting.code</dt><dd>RHB or LHB</dd>
+          <dt>bowling.code</dt><dd>Pace: R/L + F (fast), FM, MF, M, SM, e.g. RFM. Spin: OB off-break, LB leg-break, LBG leg-break googly, SLA slow left-arm orthodox, LWS left-arm wrist-spin.</dd>
+          <dt>bowling.also</dt><dd>secondary style codes when a player bowls more than one style</dd>
+          <dt>bowling.status</dt><dd><em>bowls</em>, <em>does-not-bowl</em>, <em>not-listed</em> (profile lists no bowling, usually a non-bowler), <em>unknown</em></dd>
+          <dt>role.primary</dt><dd>batter, bowler, allrounder, batting-/bowling-allrounder, wicketkeeper-batter</dd>
+          <dt>era</dt><dd><em>current</em> (played since 2021) or <em>historical</em> (last played earlier). For any other cut-off use <code>activity.latest_match</code>.</dd>
+          <dt>provenance</dt><dd>where each field came from (manual, cricinfo, cricbuzz, wikipedia, web-search) and whether you verified it</dd>
+          <dt>ids</dt><dd>cricinfo, cricbuzz, cricketarchive, opta, nvplay, pulse, bcci, …</dd>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Cricket Player Profiles <strong id="foot-version">v2.4.0</strong></span>
+    <span id="foot-data"></span>
+    <span>© 2026 Abhijit Deshpande</span>
+    <span>Match data: <a href="https://cricsheet.org" target="_blank" rel="noopener">Cricsheet</a> (ODC-BY)</span>
+  </footer>
+
+  <div id="tray" class="tray" hidden>
+    <div class="tray-bar">
+      <strong id="tray-count"></strong>
+      <button class="btn ghost" id="tray-toggle">Review</button>
+      <button class="btn primary" id="tray-submit">Submit to GitHub</button>
+    </div>
+    <div id="tray-list" class="tray-list" hidden></div>
+  </div>
+
+  <aside id="detail" class="detail" hidden aria-live="polite"></aside>
+  <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
