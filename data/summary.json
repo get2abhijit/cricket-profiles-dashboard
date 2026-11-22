@@ -1,0 +1,2301 @@
+{
+ "app_version": "2.4.0",
+ "schema_version": "2.2.0",
+ "generated_at": "2026-11-22T02:54:40+00:00",
+ "split_date": "2021-01-01",
+ "totals": {
+  "players": 4814,
+  "teams": 109,
+  "complete": 4716,
+  "batting_hand": 4799,
+  "bowling_style": 3960,
+  "non_bowlers": 759,
+  "current_players": 3889,
+  "historical_players": 925
+ },
+ "teams": [
+  {
+   "team": "Argentina",
+   "players": 28,
+   "complete": 25,
+   "partial": 3,
+   "missing": 0
+  },
+  {
+   "team": "Australia",
+   "players": 118,
+   "complete": 118,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Austria",
+   "players": 48,
+   "complete": 47,
+   "partial": 1,
+   "missing": 0
+  },
+  {
+   "team": "Bahamas",
+   "players": 35,
+   "complete": 33,
+   "partial": 2,
+   "missing": 0
+  },
+  {
+   "team": "Bahrain",
+   "players": 57,
+   "complete": 56,
+   "partial": 1,
+   "missing": 0
+  },
+  {
+   "team": "Bangladesh",
+   "players": 91,
+   "complete": 91,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Belgium",
+   "players": 42,
+   "complete": 40,
+   "partial": 2,
+   "missing": 0
+  },
+  {
+   "team": "Belize",
+   "players": 30,
+   "complete": 30,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Bermuda",
+   "players": 49,
+   "complete": 46,
+   "partial": 3,
+   "missing": 0
+  },
+  {
+   "team": "Bhutan",
+   "players": 35,
+   "complete": 35,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Botswana",
+   "players": 38,
+   "complete": 35,
+   "partial": 2,
+   "missing": 1
+  },
+  {
+   "team": "Brazil",
+   "players": 24,
+   "complete": 19,
+   "partial": 5,
+   "missing": 0
+  },
+  {
+   "team": "Bulgaria",
+   "players": 47,
+   "complete": 47,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Cambodia",
+   "players": 27,
+   "complete": 27,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Cameroon",
+   "players": 20,
+   "complete": 20,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Canada",
+   "players": 65,
+   "complete": 65,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Cayman Islands",
+   "players": 41,
+   "complete": 41,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Chile",
+   "players": 13,
+   "complete": 8,
+   "partial": 5,
+   "missing": 0
+  },
+  {
+   "team": "China",
+   "players": 24,
+   "complete": 23,
+   "partial": 1,
+   "missing": 0
+  },
+  {
+   "team": "Cook Islands",
+   "players": 27,
+   "complete": 26,
+   "partial": 1,
+   "missing": 0
+  },
+  {
+   "team": "Costa Rica",
+   "players": 25,
+   "complete": 24,
+   "partial": 1,
+   "missing": 0
+  },
+  {
+   "team": "Croatia",
+   "players": 58,
+   "complete": 57,
+   "partial": 1,
+   "missing": 0
+  },
+  {
+   "team": "Cyprus",
+   "players": 43,
+   "complete": 43,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Czech Republic",
+   "players": 47,
+   "complete": 47,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Denmark",
+   "players": 39,
+   "complete": 39,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "England",
+   "players": 109,
+   "complete": 109,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Estonia",
+   "players": 38,
+   "complete": 38,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Eswatini",
+   "players": 32,
+   "complete": 31,
+   "partial": 1,
+   "missing": 0
+  },
+  {
+   "team": "Fiji",
+   "players": 30,
+   "complete": 30,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Finland",
+   "players": 36,
+   "complete": 34,
+   "partial": 2,
+   "missing": 0
+  },
+  {
+   "team": "France",
+   "players": 38,
+   "complete": 38,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Gambia",
+   "players": 23,
+   "complete": 22,
+   "partial": 1,
+   "missing": 0
+  },
+  {
+   "team": "Germany",
+   "players": 53,
+   "complete": 53,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Ghana",
+   "players": 39,
+   "complete": 37,
+   "partial": 2,
+   "missing": 0
+  },
+  {
+   "team": "Gibraltar",
+   "players": 43,
+   "complete": 42,
+   "partial": 0,
+   "missing": 1
+  },
+  {
+   "team": "Greece",
+   "players": 32,
+   "complete": 32,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Guernsey",
+   "players": 34,
+   "complete": 32,
+   "partial": 2,
+   "missing": 0
+  },
+  {
+   "team": "Hong Kong",
+   "players": 56,
+   "complete": 56,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Hungary",
+   "players": 45,
+   "complete": 45,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "ICC World XI",
+   "players": 16,
+   "complete": 16,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "India",
+   "players": 125,
+   "complete": 125,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Indonesia",
+   "players": 43,
+   "complete": 43,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Iran",
+   "players": 11,
+   "complete": 11,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Ireland",
+   "players": 62,
+   "complete": 61,
+   "partial": 0,
+   "missing": 1
+  },
+  {
+   "team": "Isle of Man",
+   "players": 27,
+   "complete": 27,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Israel",
+   "players": 32,
+   "complete": 32,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Italy",
+   "players": 47,
+   "complete": 47,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Ivory Coast",
+   "players": 15,
+   "complete": 15,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Japan",
+   "players": 31,
+   "complete": 31,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Jersey",
+   "players": 29,
+   "complete": 29,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Kenya",
+   "players": 52,
+   "complete": 51,
+   "partial": 1,
+   "missing": 0
+  },
+  {
+   "team": "Kuwait",
+   "players": 38,
+   "complete": 37,
+   "partial": 1,
+   "missing": 0
+  },
+  {
+   "team": "Lesotho",
+   "players": 32,
+   "complete": 31,
+   "partial": 1,
+   "missing": 0
+  },
+  {
+   "team": "Luxembourg",
+   "players": 39,
+   "complete": 39,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Malawi",
+   "players": 30,
+   "complete": 30,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Malaysia",
+   "players": 43,
+   "complete": 43,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Maldives",
+   "players": 38,
+   "complete": 37,
+   "partial": 1,
+   "missing": 0
+  },
+  {
+   "team": "Mali",
+   "players": 23,
+   "complete": 23,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Malta",
+   "players": 55,
+   "complete": 55,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Mexico",
+   "players": 43,
+   "complete": 41,
+   "partial": 2,
+   "missing": 0
+  },
+  {
+   "team": "Mongolia",
+   "players": 26,
+   "complete": 26,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Mozambique",
+   "players": 30,
+   "complete": 29,
+   "partial": 1,
+   "missing": 0
+  },
+  {
+   "team": "Myanmar",
+   "players": 26,
+   "complete": 26,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Namibia",
+   "players": 40,
+   "complete": 40,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Nepal",
+   "players": 55,
+   "complete": 53,
+   "partial": 2,
+   "missing": 0
+  },
+  {
+   "team": "Netherlands",
+   "players": 60,
+   "complete": 60,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "New Zealand",
+   "players": 108,
+   "complete": 108,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Nigeria",
+   "players": 43,
+   "complete": 41,
+   "partial": 0,
+   "missing": 2
+  },
+  {
+   "team": "Norway",
+   "players": 46,
+   "complete": 46,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Oman",
+   "players": 67,
+   "complete": 67,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Pakistan",
+   "players": 127,
+   "complete": 127,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Panama",
+   "players": 53,
+   "complete": 51,
+   "partial": 2,
+   "missing": 0
+  },
+  {
+   "team": "Papua New Guinea",
+   "players": 37,
+   "complete": 37,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Peru",
+   "players": 11,
+   "complete": 6,
+   "partial": 5,
+   "missing": 0
+  },
+  {
+   "team": "Philippines",
+   "players": 35,
+   "complete": 33,
+   "partial": 1,
+   "missing": 1
+  },
+  {
+   "team": "Portugal",
+   "players": 46,
+   "complete": 43,
+   "partial": 1,
+   "missing": 2
+  },
+  {
+   "team": "Qatar",
+   "players": 56,
+   "complete": 55,
+   "partial": 1,
+   "missing": 0
+  },
+  {
+   "team": "Romania",
+   "players": 56,
+   "complete": 56,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Rwanda",
+   "players": 31,
+   "complete": 28,
+   "partial": 2,
+   "missing": 1
+  },
+  {
+   "team": "Samoa",
+   "players": 28,
+   "complete": 28,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Saudi Arabia",
+   "players": 49,
+   "complete": 47,
+   "partial": 2,
+   "missing": 0
+  },
+  {
+   "team": "Scotland",
+   "players": 67,
+   "complete": 67,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Serbia",
+   "players": 32,
+   "complete": 32,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Seychelles",
+   "players": 29,
+   "complete": 29,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Sierra Leone",
+   "players": 32,
+   "complete": 32,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Singapore",
+   "players": 70,
+   "complete": 67,
+   "partial": 3,
+   "missing": 0
+  },
+  {
+   "team": "Slovenia",
+   "players": 30,
+   "complete": 28,
+   "partial": 2,
+   "missing": 0
+  },
+  {
+   "team": "South Africa",
+   "players": 128,
+   "complete": 127,
+   "partial": 1,
+   "missing": 0
+  },
+  {
+   "team": "South Korea",
+   "players": 33,
+   "complete": 32,
+   "partial": 1,
+   "missing": 0
+  },
+  {
+   "team": "Spain",
+   "players": 39,
+   "complete": 39,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Sri Lanka",
+   "players": 110,
+   "complete": 110,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "St Helena",
+   "players": 19,
+   "complete": 10,
+   "partial": 9,
+   "missing": 0
+  },
+  {
+   "team": "Suriname",
+   "players": 18,
+   "complete": 17,
+   "partial": 1,
+   "missing": 0
+  },
+  {
+   "team": "Swaziland",
+   "players": 14,
+   "complete": 13,
+   "partial": 1,
+   "missing": 0
+  },
+  {
+   "team": "Sweden",
+   "players": 49,
+   "complete": 48,
+   "partial": 1,
+   "missing": 0
+  },
+  {
+   "team": "Switzerland",
+   "players": 41,
+   "complete": 41,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Tanzania",
+   "players": 36,
+   "complete": 33,
+   "partial": 3,
+   "missing": 0
+  },
+  {
+   "team": "Thailand",
+   "players": 41,
+   "complete": 36,
+   "partial": 3,
+   "missing": 2
+  },
+  {
+   "team": "Timor-Leste",
+   "players": 12,
+   "complete": 12,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Turkey",
+   "players": 38,
+   "complete": 38,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Turks and Caicos Island",
+   "players": 17,
+   "complete": 17,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Uganda",
+   "players": 49,
+   "complete": 48,
+   "partial": 1,
+   "missing": 0
+  },
+  {
+   "team": "United Arab Emirates",
+   "players": 100,
+   "complete": 99,
+   "partial": 0,
+   "missing": 1
+  },
+  {
+   "team": "United States of America",
+   "players": 52,
+   "complete": 52,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Uzbekistan",
+   "players": 14,
+   "complete": 14,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Vanuatu",
+   "players": 28,
+   "complete": 27,
+   "partial": 1,
+   "missing": 0
+  },
+  {
+   "team": "West Indies",
+   "players": 109,
+   "complete": 109,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Zambia",
+   "players": 23,
+   "complete": 23,
+   "partial": 0,
+   "missing": 0
+  },
+  {
+   "team": "Zimbabwe",
+   "players": 85,
+   "complete": 85,
+   "partial": 0,
+   "missing": 0
+  }
+ ],
+ "bowling_codes": [
+  {
+   "code": "LB",
+   "label": "leg-break",
+   "players": 209
+  },
+  {
+   "code": "LBG",
+   "label": "leg-break googly",
+   "players": 90
+  },
+  {
+   "code": "LF",
+   "label": "left-arm fast",
+   "players": 21
+  },
+  {
+   "code": "LFM",
+   "label": "left-arm fast-medium",
+   "players": 61
+  },
+  {
+   "code": "LM",
+   "label": "left-arm medium",
+   "players": 130
+  },
+  {
+   "code": "LMF",
+   "label": "left-arm medium-fast",
+   "players": 82
+  },
+  {
+   "code": "LS",
+   "label": "left-arm slow",
+   "players": 3
+  },
+  {
+   "code": "LWS",
+   "label": "left-arm wrist-spin",
+   "players": 17
+  },
+  {
+   "code": "OB",
+   "label": "off-break",
+   "players": 779
+  },
+  {
+   "code": "RF",
+   "label": "right-arm fast",
+   "players": 102
+  },
+  {
+   "code": "RFM",
+   "label": "right-arm fast-medium",
+   "players": 243
+  },
+  {
+   "code": "RM",
+   "label": "right-arm medium",
+   "players": 1293
+  },
+  {
+   "code": "RMF",
+   "label": "right-arm medium-fast",
+   "players": 555
+  },
+  {
+   "code": "RS",
+   "label": "right-arm slow",
+   "players": 4
+  },
+  {
+   "code": "RSM",
+   "label": "right-arm slow-medium",
+   "players": 3
+  },
+  {
+   "code": "SLA",
+   "label": "slow left-arm orthodox",
+   "players": 368
+  }
+ ],
+ "eras": {
+  "current": {
+   "totals": {
+    "players": 3889,
+    "teams": 107,
+    "complete": 3804,
+    "batting_hand": 3885,
+    "bowling_style": 3148,
+    "non_bowlers": 659
+   },
+   "teams": [
+    {
+     "team": "Argentina",
+     "players": 28,
+     "complete": 25,
+     "partial": 3,
+     "missing": 0
+    },
+    {
+     "team": "Australia",
+     "players": 48,
+     "complete": 48,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Austria",
+     "players": 48,
+     "complete": 47,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Bahamas",
+     "players": 35,
+     "complete": 33,
+     "partial": 2,
+     "missing": 0
+    },
+    {
+     "team": "Bahrain",
+     "players": 56,
+     "complete": 55,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Bangladesh",
+     "players": 49,
+     "complete": 49,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Belgium",
+     "players": 42,
+     "complete": 40,
+     "partial": 2,
+     "missing": 0
+    },
+    {
+     "team": "Belize",
+     "players": 30,
+     "complete": 30,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Bermuda",
+     "players": 36,
+     "complete": 33,
+     "partial": 3,
+     "missing": 0
+    },
+    {
+     "team": "Bhutan",
+     "players": 29,
+     "complete": 29,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Botswana",
+     "players": 35,
+     "complete": 33,
+     "partial": 2,
+     "missing": 0
+    },
+    {
+     "team": "Brazil",
+     "players": 24,
+     "complete": 19,
+     "partial": 5,
+     "missing": 0
+    },
+    {
+     "team": "Bulgaria",
+     "players": 45,
+     "complete": 45,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Cambodia",
+     "players": 27,
+     "complete": 27,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Cameroon",
+     "players": 20,
+     "complete": 20,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Canada",
+     "players": 39,
+     "complete": 39,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Cayman Islands",
+     "players": 35,
+     "complete": 35,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Chile",
+     "players": 13,
+     "complete": 8,
+     "partial": 5,
+     "missing": 0
+    },
+    {
+     "team": "China",
+     "players": 24,
+     "complete": 23,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Cook Islands",
+     "players": 27,
+     "complete": 26,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Costa Rica",
+     "players": 25,
+     "complete": 24,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Croatia",
+     "players": 58,
+     "complete": 57,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Cyprus",
+     "players": 43,
+     "complete": 43,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Czech Republic",
+     "players": 44,
+     "complete": 44,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Denmark",
+     "players": 37,
+     "complete": 37,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "England",
+     "players": 47,
+     "complete": 47,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Estonia",
+     "players": 38,
+     "complete": 38,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Eswatini",
+     "players": 32,
+     "complete": 31,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Fiji",
+     "players": 30,
+     "complete": 30,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Finland",
+     "players": 36,
+     "complete": 34,
+     "partial": 2,
+     "missing": 0
+    },
+    {
+     "team": "France",
+     "players": 38,
+     "complete": 38,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Gambia",
+     "players": 23,
+     "complete": 22,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Germany",
+     "players": 48,
+     "complete": 48,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Ghana",
+     "players": 36,
+     "complete": 34,
+     "partial": 2,
+     "missing": 0
+    },
+    {
+     "team": "Gibraltar",
+     "players": 41,
+     "complete": 41,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Greece",
+     "players": 32,
+     "complete": 32,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Guernsey",
+     "players": 29,
+     "complete": 27,
+     "partial": 2,
+     "missing": 0
+    },
+    {
+     "team": "Hong Kong",
+     "players": 41,
+     "complete": 41,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Hungary",
+     "players": 45,
+     "complete": 45,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "India",
+     "players": 70,
+     "complete": 70,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Indonesia",
+     "players": 43,
+     "complete": 43,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Ireland",
+     "players": 31,
+     "complete": 31,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Isle of Man",
+     "players": 26,
+     "complete": 26,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Israel",
+     "players": 32,
+     "complete": 32,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Italy",
+     "players": 37,
+     "complete": 37,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Ivory Coast",
+     "players": 15,
+     "complete": 15,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Japan",
+     "players": 31,
+     "complete": 31,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Jersey",
+     "players": 26,
+     "complete": 26,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Kenya",
+     "players": 34,
+     "complete": 33,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Kuwait",
+     "players": 31,
+     "complete": 30,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Lesotho",
+     "players": 32,
+     "complete": 31,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Luxembourg",
+     "players": 37,
+     "complete": 37,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Malawi",
+     "players": 30,
+     "complete": 30,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Malaysia",
+     "players": 39,
+     "complete": 39,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Maldives",
+     "players": 33,
+     "complete": 32,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Mali",
+     "players": 23,
+     "complete": 23,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Malta",
+     "players": 55,
+     "complete": 55,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Mexico",
+     "players": 43,
+     "complete": 41,
+     "partial": 2,
+     "missing": 0
+    },
+    {
+     "team": "Mongolia",
+     "players": 26,
+     "complete": 26,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Mozambique",
+     "players": 30,
+     "complete": 29,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Myanmar",
+     "players": 26,
+     "complete": 26,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Namibia",
+     "players": 37,
+     "complete": 37,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Nepal",
+     "players": 43,
+     "complete": 42,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Netherlands",
+     "players": 38,
+     "complete": 38,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "New Zealand",
+     "players": 52,
+     "complete": 52,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Nigeria",
+     "players": 39,
+     "complete": 39,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Norway",
+     "players": 43,
+     "complete": 43,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Oman",
+     "players": 58,
+     "complete": 58,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Pakistan",
+     "players": 64,
+     "complete": 64,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Panama",
+     "players": 53,
+     "complete": 51,
+     "partial": 2,
+     "missing": 0
+    },
+    {
+     "team": "Papua New Guinea",
+     "players": 28,
+     "complete": 28,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Peru",
+     "players": 11,
+     "complete": 6,
+     "partial": 5,
+     "missing": 0
+    },
+    {
+     "team": "Philippines",
+     "players": 30,
+     "complete": 29,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Portugal",
+     "players": 41,
+     "complete": 40,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Qatar",
+     "players": 50,
+     "complete": 49,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Romania",
+     "players": 54,
+     "complete": 54,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Rwanda",
+     "players": 31,
+     "complete": 28,
+     "partial": 2,
+     "missing": 1
+    },
+    {
+     "team": "Samoa",
+     "players": 28,
+     "complete": 28,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Saudi Arabia",
+     "players": 43,
+     "complete": 41,
+     "partial": 2,
+     "missing": 0
+    },
+    {
+     "team": "Scotland",
+     "players": 35,
+     "complete": 35,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Serbia",
+     "players": 32,
+     "complete": 32,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Seychelles",
+     "players": 29,
+     "complete": 29,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Sierra Leone",
+     "players": 32,
+     "complete": 32,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Singapore",
+     "players": 66,
+     "complete": 63,
+     "partial": 3,
+     "missing": 0
+    },
+    {
+     "team": "Slovenia",
+     "players": 30,
+     "complete": 28,
+     "partial": 2,
+     "missing": 0
+    },
+    {
+     "team": "South Africa",
+     "players": 68,
+     "complete": 68,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "South Korea",
+     "players": 33,
+     "complete": 32,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Spain",
+     "players": 34,
+     "complete": 34,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Sri Lanka",
+     "players": 54,
+     "complete": 54,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "St Helena",
+     "players": 19,
+     "complete": 10,
+     "partial": 9,
+     "missing": 0
+    },
+    {
+     "team": "Suriname",
+     "players": 18,
+     "complete": 17,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Swaziland",
+     "players": 14,
+     "complete": 13,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Sweden",
+     "players": 49,
+     "complete": 48,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Switzerland",
+     "players": 41,
+     "complete": 41,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Tanzania",
+     "players": 36,
+     "complete": 33,
+     "partial": 3,
+     "missing": 0
+    },
+    {
+     "team": "Thailand",
+     "players": 31,
+     "complete": 28,
+     "partial": 3,
+     "missing": 0
+    },
+    {
+     "team": "Timor-Leste",
+     "players": 12,
+     "complete": 12,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Turkey",
+     "players": 38,
+     "complete": 38,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Turks and Caicos Island",
+     "players": 17,
+     "complete": 17,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Uganda",
+     "players": 46,
+     "complete": 45,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "United Arab Emirates",
+     "players": 62,
+     "complete": 62,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "United States of America",
+     "players": 47,
+     "complete": 47,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Uzbekistan",
+     "players": 14,
+     "complete": 14,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Vanuatu",
+     "players": 21,
+     "complete": 20,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "West Indies",
+     "players": 56,
+     "complete": 56,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Zambia",
+     "players": 23,
+     "complete": 23,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Zimbabwe",
+     "players": 48,
+     "complete": 48,
+     "partial": 0,
+     "missing": 0
+    }
+   ],
+   "bowling_codes": [
+    {
+     "code": "LB",
+     "label": "leg-break",
+     "players": 150
+    },
+    {
+     "code": "LBG",
+     "label": "leg-break googly",
+     "players": 68
+    },
+    {
+     "code": "LF",
+     "label": "left-arm fast",
+     "players": 16
+    },
+    {
+     "code": "LFM",
+     "label": "left-arm fast-medium",
+     "players": 38
+    },
+    {
+     "code": "LM",
+     "label": "left-arm medium",
+     "players": 113
+    },
+    {
+     "code": "LMF",
+     "label": "left-arm medium-fast",
+     "players": 62
+    },
+    {
+     "code": "LS",
+     "label": "left-arm slow",
+     "players": 2
+    },
+    {
+     "code": "LWS",
+     "label": "left-arm wrist-spin",
+     "players": 13
+    },
+    {
+     "code": "OB",
+     "label": "off-break",
+     "players": 616
+    },
+    {
+     "code": "RF",
+     "label": "right-arm fast",
+     "players": 79
+    },
+    {
+     "code": "RFM",
+     "label": "right-arm fast-medium",
+     "players": 114
+    },
+    {
+     "code": "RM",
+     "label": "right-arm medium",
+     "players": 1119
+    },
+    {
+     "code": "RMF",
+     "label": "right-arm medium-fast",
+     "players": 474
+    },
+    {
+     "code": "RS",
+     "label": "right-arm slow",
+     "players": 3
+    },
+    {
+     "code": "RSM",
+     "label": "right-arm slow-medium",
+     "players": 2
+    },
+    {
+     "code": "SLA",
+     "label": "slow left-arm orthodox",
+     "players": 279
+    }
+   ]
+  },
+  "historical": {
+   "totals": {
+    "players": 925,
+    "teams": 55,
+    "complete": 912,
+    "batting_hand": 914,
+    "bowling_style": 812,
+    "non_bowlers": 100
+   },
+   "teams": [
+    {
+     "team": "Australia",
+     "players": 70,
+     "complete": 70,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Bahrain",
+     "players": 1,
+     "complete": 1,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Bangladesh",
+     "players": 42,
+     "complete": 42,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Bermuda",
+     "players": 13,
+     "complete": 13,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Bhutan",
+     "players": 6,
+     "complete": 6,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Botswana",
+     "players": 3,
+     "complete": 2,
+     "partial": 0,
+     "missing": 1
+    },
+    {
+     "team": "Bulgaria",
+     "players": 2,
+     "complete": 2,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Canada",
+     "players": 26,
+     "complete": 26,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Cayman Islands",
+     "players": 6,
+     "complete": 6,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Czech Republic",
+     "players": 3,
+     "complete": 3,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Denmark",
+     "players": 2,
+     "complete": 2,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "England",
+     "players": 62,
+     "complete": 62,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Germany",
+     "players": 5,
+     "complete": 5,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Ghana",
+     "players": 3,
+     "complete": 3,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Gibraltar",
+     "players": 2,
+     "complete": 1,
+     "partial": 0,
+     "missing": 1
+    },
+    {
+     "team": "Guernsey",
+     "players": 5,
+     "complete": 5,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Hong Kong",
+     "players": 15,
+     "complete": 15,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "ICC World XI",
+     "players": 16,
+     "complete": 16,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "India",
+     "players": 55,
+     "complete": 55,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Iran",
+     "players": 11,
+     "complete": 11,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Ireland",
+     "players": 31,
+     "complete": 30,
+     "partial": 0,
+     "missing": 1
+    },
+    {
+     "team": "Isle of Man",
+     "players": 1,
+     "complete": 1,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Italy",
+     "players": 10,
+     "complete": 10,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Jersey",
+     "players": 3,
+     "complete": 3,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Kenya",
+     "players": 18,
+     "complete": 18,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Kuwait",
+     "players": 7,
+     "complete": 7,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Luxembourg",
+     "players": 2,
+     "complete": 2,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Malaysia",
+     "players": 4,
+     "complete": 4,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Maldives",
+     "players": 5,
+     "complete": 5,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Namibia",
+     "players": 3,
+     "complete": 3,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Nepal",
+     "players": 12,
+     "complete": 11,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Netherlands",
+     "players": 22,
+     "complete": 22,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "New Zealand",
+     "players": 56,
+     "complete": 56,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Nigeria",
+     "players": 4,
+     "complete": 2,
+     "partial": 0,
+     "missing": 2
+    },
+    {
+     "team": "Norway",
+     "players": 3,
+     "complete": 3,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Oman",
+     "players": 9,
+     "complete": 9,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Pakistan",
+     "players": 63,
+     "complete": 63,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Papua New Guinea",
+     "players": 9,
+     "complete": 9,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Philippines",
+     "players": 5,
+     "complete": 4,
+     "partial": 0,
+     "missing": 1
+    },
+    {
+     "team": "Portugal",
+     "players": 5,
+     "complete": 3,
+     "partial": 0,
+     "missing": 2
+    },
+    {
+     "team": "Qatar",
+     "players": 6,
+     "complete": 6,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Romania",
+     "players": 2,
+     "complete": 2,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Saudi Arabia",
+     "players": 6,
+     "complete": 6,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Scotland",
+     "players": 32,
+     "complete": 32,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Singapore",
+     "players": 4,
+     "complete": 4,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "South Africa",
+     "players": 60,
+     "complete": 59,
+     "partial": 1,
+     "missing": 0
+    },
+    {
+     "team": "Spain",
+     "players": 5,
+     "complete": 5,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Sri Lanka",
+     "players": 56,
+     "complete": 56,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Thailand",
+     "players": 10,
+     "complete": 8,
+     "partial": 0,
+     "missing": 2
+    },
+    {
+     "team": "Uganda",
+     "players": 3,
+     "complete": 3,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "United Arab Emirates",
+     "players": 38,
+     "complete": 37,
+     "partial": 0,
+     "missing": 1
+    },
+    {
+     "team": "United States of America",
+     "players": 5,
+     "complete": 5,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Vanuatu",
+     "players": 7,
+     "complete": 7,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "West Indies",
+     "players": 53,
+     "complete": 53,
+     "partial": 0,
+     "missing": 0
+    },
+    {
+     "team": "Zimbabwe",
+     "players": 37,
+     "complete": 37,
+     "partial": 0,
+     "missing": 0
+    }
+   ],
+   "bowling_codes": [
+    {
+     "code": "LB",
+     "label": "leg-break",
+     "players": 59
+    },
+    {
+     "code": "LBG",
+     "label": "leg-break googly",
+     "players": 22
+    },
+    {
+     "code": "LF",
+     "label": "left-arm fast",
+     "players": 5
+    },
+    {
+     "code": "LFM",
+     "label": "left-arm fast-medium",
+     "players": 23
+    },
+    {
+     "code": "LM",
+     "label": "left-arm medium",
+     "players": 17
+    },
+    {
+     "code": "LMF",
+     "label": "left-arm medium-fast",
+     "players": 20
+    },
+    {
+     "code": "LS",
+     "label": "left-arm slow",
+     "players": 1
+    },
+    {
+     "code": "LWS",
+     "label": "left-arm wrist-spin",
+     "players": 4
+    },
+    {
+     "code": "OB",
+     "label": "off-break",
+     "players": 163
+    },
+    {
+     "code": "RF",
+     "label": "right-arm fast",
+     "players": 23
+    },
+    {
+     "code": "RFM",
+     "label": "right-arm fast-medium",
+     "players": 129
+    },
+    {
+     "code": "RM",
+     "label": "right-arm medium",
+     "players": 174
+    },
+    {
+     "code": "RMF",
+     "label": "right-arm medium-fast",
+     "players": 81
+    },
+    {
+     "code": "RS",
+     "label": "right-arm slow",
+     "players": 1
+    },
+    {
+     "code": "RSM",
+     "label": "right-arm slow-medium",
+     "players": 1
+    },
+    {
+     "code": "SLA",
+     "label": "slow left-arm orthodox",
+     "players": 89
+    }
+   ]
+  }
+ },
+ "by_last_year": [
+  {
+   "year": "2005",
+   "players": 6,
+   "complete": 6
+  },
+  {
+   "year": "2006",
+   "players": 29,
+   "complete": 29
+  },
+  {
+   "year": "2007",
+   "players": 37,
+   "complete": 37
+  },
+  {
+   "year": "2008",
+   "players": 37,
+   "complete": 37
+  },
+  {
+   "year": "2009",
+   "players": 49,
+   "complete": 49
+  },
+  {
+   "year": "2010",
+   "players": 70,
+   "complete": 69
+  },
+  {
+   "year": "2011",
+   "players": 28,
+   "complete": 28
+  },
+  {
+   "year": "2012",
+   "players": 67,
+   "complete": 67
+  },
+  {
+   "year": "2013",
+   "players": 62,
+   "complete": 62
+  },
+  {
+   "year": "2014",
+   "players": 57,
+   "complete": 56
+  },
+  {
+   "year": "2015",
+   "players": 50,
+   "complete": 50
+  },
+  {
+   "year": "2016",
+   "players": 73,
+   "complete": 71
+  },
+  {
+   "year": "2017",
+   "players": 57,
+   "complete": 57
+  },
+  {
+   "year": "2018",
+   "players": 44,
+   "complete": 44
+  },
+  {
+   "year": "2019",
+   "players": 179,
+   "complete": 171
+  },
+  {
+   "year": "2020",
+   "players": 80,
+   "complete": 79
+  },
+  {
+   "year": "2021",
+   "players": 268,
+   "complete": 266
+  },
+  {
+   "year": "2022",
+   "players": 363,
+   "complete": 358
+  },
+  {
+   "year": "2023",
+   "players": 275,
+   "complete": 264
+  },
+  {
+   "year": "2024",
+   "players": 558,
+   "complete": 540
+  },
+  {
+   "year": "2025",
+   "players": 576,
+   "complete": 567
+  },
+  {
+   "year": "2026",
+   "players": 1849,
+   "complete": 1809
+  }
+ ],
+ "protected": true,
+ "accounts": 5
+}
